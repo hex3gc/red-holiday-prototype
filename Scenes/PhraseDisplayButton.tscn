@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://dow1sd0fpeo42"]
+
+[ext_resource type="Script" uid="uid://bfem0n4eixl7w" path="res://Scripts/Nodes/NPhraseDisplayButton.cs" id="1_1veui"]
+[ext_resource type="Texture2D" uid="uid://c5m6vgw12p0mt" path="res://Images/box-overlay.png" id="2_jsjup"]
+
+[sub_resource type="Gradient" id="Gradient_1veui"]
+offsets = PackedFloat32Array(0, 0.116883114, 0.23376623, 1)
+colors = PackedColorArray(0.28627452, 0.28627452, 0.28627452, 1, 0.28627452, 0.28627452, 0.28627452, 1, 0.28627452, 0.28627452, 0.28627452, 1, 0.1882353, 0.1882353, 0.1882353, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_lq7ml"]
+gradient = SubResource("Gradient_1veui")
+
+[sub_resource type="Gradient" id="Gradient_jsjup"]
+colors = PackedColorArray(0.18717611, 0.18717614, 0.18717608, 1, 0.28485042, 0.2848502, 0.2848504, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1veui"]
+gradient = SubResource("Gradient_jsjup")
+fill_from = Vector2(0, 0.0045871558)
+
+[sub_resource type="SystemFont" id="SystemFont_wcnaf"]
+font_names = PackedStringArray("Trebuchet MS")
+
+[sub_resource type="LabelSettings" id="LabelSettings_jsjup"]
+font = SubResource("SystemFont_wcnaf")
+font_size = 18
+
+[node name="PhraseDisplayButton" type="TextureButton" unique_id=635318935]
+custom_minimum_size = Vector2(0, 80)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -440.0
+offset_bottom = -820.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("GradientTexture2D_lq7ml")
+texture_hover = SubResource("GradientTexture2D_1veui")
+stretch_mode = 0
+script = ExtResource("1_1veui")
+
+[node name="ColorOverlayTextureRect" type="TextureRect" parent="." unique_id=1773753186]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jsjup")
+expand_mode = 1
+flip_h = true
+
+[node name="Label" type="Label" parent="." unique_id=1362932998]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "PLACEHOLDER"
+label_settings = SubResource("LabelSettings_jsjup")
+horizontal_alignment = 1
+vertical_alignment = 1

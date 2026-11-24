@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://rshan2o4b7mk"]
+
+[ext_resource type="Script" uid="uid://cumrlbyt6sdna" path="res://Scripts/Nodes/NAxisBarToast.cs" id="1_3bxjv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_siqiu"]
+resource_local_to_scene = true
+font_size = 18
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[node name="AxisBarToast" type="Label" unique_id=893538090]
+offset_right = 327.0
+offset_bottom = 51.0
+text = "+PLACEHOLDER"
+label_settings = SubResource("LabelSettings_siqiu")
+script = ExtResource("1_3bxjv")

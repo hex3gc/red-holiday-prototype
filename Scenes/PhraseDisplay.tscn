@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://djs2wvrf4yucl"]
+
+[ext_resource type="Script" uid="uid://b57ibwltj0gon" path="res://Scripts/Nodes/NPhraseDisplay.cs" id="1_s1wal"]
+[ext_resource type="Texture2D" uid="uid://bbks8coyde0va" path="res://Images/box-overlayLow.png" id="2_drw2j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mqfgb"]
+resource_local_to_scene = true
+bg_color = Color(0.03529412, 0.03529412, 0.03529412, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_wcnaf"]
+font_names = PackedStringArray("Tahoma")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_1veui"]
+font = SubResource("SystemFont_wcnaf")
+outline_size = 4
+outline_color = Color(0.03529412, 0.03529412, 0.03529412, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_l7ixd"]
+resource_local_to_scene = true
+font_names = PackedStringArray("Trebuchet MS")
+font_italic = true
+font_weight = 999
+
+[sub_resource type="LabelSettings" id="LabelSettings_48v2j"]
+resource_local_to_scene = true
+font = SubResource("SystemFont_l7ixd")
+font_size = 30
+outline_size = 7
+outline_color = Color(0.03529412, 0.03529412, 0.03529412, 1)
+
+[node name="PhraseDisplay" type="Control" unique_id=1557349191]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -400.0
+offset_bottom = -700.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s1wal")
+
+[node name="PhraseDisplayVBoxContainer" type="VBoxContainer" parent="." unique_id=604368656]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 1200.0
+offset_bottom = 200.0
+
+[node name="MainPanelContainer" type="PanelContainer" parent="PhraseDisplayVBoxContainer" unique_id=2001842432]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_mqfgb")
+
+[node name="MainPanelContainerTexture" type="TextureRect" parent="PhraseDisplayVBoxContainer/MainPanelContainer" unique_id=712801816]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("2_drw2j")
+
+[node name="MainMarginContainer" type="MarginContainer" parent="PhraseDisplayVBoxContainer/MainPanelContainer" unique_id=531104443]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="MainVBoxContainer" type="VBoxContainer" parent="PhraseDisplayVBoxContainer/MainPanelContainer/MainMarginContainer" unique_id=239994455]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MainLabel" type="Label" parent="PhraseDisplayVBoxContainer/MainPanelContainer/MainMarginContainer/MainVBoxContainer" unique_id=1273367550]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+text = "PLACEHOLDER"
+label_settings = SubResource("LabelSettings_1veui")
+autowrap_mode = 3
+
+[node name="ChoicesVBoxScrollContainer" type="ScrollContainer" parent="PhraseDisplayVBoxContainer/MainPanelContainer/MainMarginContainer/MainVBoxContainer" unique_id=15024480]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="ChoicesVBoxContainer" type="VBoxContainer" parent="PhraseDisplayVBoxContainer/MainPanelContainer/MainMarginContainer/MainVBoxContainer/ChoicesVBoxScrollContainer" unique_id=2038972963]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="DebugLabel" type="Label" parent="PhraseDisplayVBoxContainer" unique_id=1205022562]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="." unique_id=118024569]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 14.0
+offset_top = -27.0
+offset_right = 274.0
+offset_bottom = 9.0
+text = "PLACEHOLDER"
+label_settings = SubResource("LabelSettings_48v2j")

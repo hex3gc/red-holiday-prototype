@@ -1,0 +1,1395 @@
+{
+  "conversation": "000-WAKING_UP",
+  "priority": 0,
+  "next-conversations": [],
+  "first": true,
+  "phrases":
+  [
+    {
+      "phrase": "000-WAKING_UP_A0",
+      "text": "Welcome to the prototype!\n\nYou'll be playing through a short section of a story. During this, you'll be given choices - each choice affects an aspect of your character's personality, and at the end you'll see the results.\n\nClick the dialogue box at any time to advance, or to skip the text scrolling.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_A1"],
+      "first": true,
+      "image": "000_bedBlur1"
+    },
+    {
+      "phrase": "000-WAKING_UP_A1",
+      "text": "You feel like you're floating. It's the first sensation as you slip out of sleep.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_A2"],
+      "image": "000_closed-eyes",
+      "ambience": "fuzz"
+    },
+    {
+      "phrase": "000-WAKING_UP_A2",
+      "text": "Your body wasn't prepared to float. It moves on its own, sends your hand searching, then finds purchase on the mattress. That doesn't put your reflexes at ease - you're in bed, *and* you are floating. Somehow.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_A3"]
+    },
+    {
+      "phrase": "000-WAKING_UP_A3",
+      "text": "Your body calls upon its brain to resolve its stress, and there is a moment of confusion as you process the feeling of weightlessness. This rings alarm bells. Has the gravity ring failed?",
+      "speaker": "Narrator",
+      "priority": 0,
+      "choices":
+      [
+        {
+          "choice": "C1",
+          "text": "That doesn't sound good.",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_A4"],
+          "bumps":
+          [
+            {
+              "axis": "anxious",
+              "strength": "small"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "It's kind of a *nice* feeling being weightless. How about I sleep more instead?",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_A6"],
+          "bumps":
+          [
+            {
+              "axis": "relaxed",
+              "strength": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_A4",
+      "text": "Not good at all - the body is troubled, and now the mind is too.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_A5"]
+    },
+    {
+      "phrase": "000-WAKING_UP_A5",
+      "text": "Soon the olfactory system kicks in to take in the scents of your surroundings. It recognizes nothing.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "choices":
+      [
+        {
+          "choice": "C1",
+          "text": "It feels like I should be panicking.",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_B1"],
+          "bumps":
+          [
+            {
+              "axis": "anxious",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "Hold on, I need to figure out what's going on here...",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_C1"],
+          "bumps": 
+          [
+            {
+              "axis": "patient",
+              "strength": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_A6",
+      "text": "That would feel wonderful, you think. Sleeping more. Maybe you'll even have a dream this time.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_A7"]
+    },
+    {
+      "phrase": "000-WAKING_UP_A7",
+      "text": "Yet, your body doesn't agree. It keeps trying to tell you that something's wrong, or at the very least *different*.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "choices":
+      [
+        {
+          "choice": "C1",
+          "text": "My body's been wrong before. Let me snooze!",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_A8"],
+          "bumps":
+          [
+            {
+              "axis": "relaxed",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "Hold on, I need to figure out what's going on here...",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_C1"],
+          "bumps": 
+          [
+            {
+              "axis": "patient",
+              "strength": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_A8",
+      "text": "As if to take offense to your distrust, your body begins to ache. *Badly*. You're not getting any more rest like this.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "choices":
+      [
+        {
+          "choice": "C1",
+          "text": "Oh, fine.",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_C1"]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_B1",
+      "text": "If you have experience with these little rushes of adrenaline, then you know they come easily in the face of unfamiliarity.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_B2"]
+    },
+    {
+      "phrase": "000-WAKING_UP_B2",
+      "text": "Just take a deep breath.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "choices":
+      [
+        {
+          "choice": "C1",
+          "text": "It doesn't work - it rarely does when I'm this worried.",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_B3"],
+          "bumps":
+          [
+            {
+              "axis": "anxious",
+              "strength": "large"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "Deep breaths. In and out...",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_B4"]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_B3",
+      "text": "Thankfully, your body steps in with a strong distraction. A horrific pain in your head!",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_C1"]
+    },
+    {
+      "phrase": "000-WAKING_UP_B4",
+      "text": "In, and out... and...\n\nAh! A muscle in your back twists painfully.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_C1"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C1",
+      "text": "As you come closer to awareness, there's a dull ache spreading through your hips, your thighs, your spine - then, the much sharper ache in your head. Soon there's pain everywhere.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "image": "000_bedBlur1",
+      "next-phrases": ["000-WAKING_UP_C2"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C2",
+      "text": "The pressure behind your eyes just about forces them to open. The room is dim and barely familiar.\n\nWhat you do identify with are the rivets lining the metal walls, the immaculately smooth white and gray surfaces, the LED lights blinking at a passive rate. Yet, the lights aren't ones you recognize.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "image": "000_bedBlur2",
+      "next-phrases": ["000-WAKING_UP_C3"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C3",
+      "text": "At least they're all blinking green.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "image": "000_bed",
+      "choices":
+      [
+        {
+          "choice": "C1",
+          "text": "Clearly, I've been kidnapped and brought to some kind of space prison. Can I *really* panic this time?",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_C4"],
+          "bumps":
+          [
+            {
+              "axis": "anxious",
+              "strength": "large"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "See? I have nothing to worry about. I'm going back to sleep.",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_C5"],
+          "bumps":
+          [
+            {
+              "axis": "relaxed",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C3",
+          "text": "I'm not jumping to any conclusions - why am I here?",
+          "priority": 2,
+          "next-phrases": ["000-WAKING_UP_C6"],
+          "bumps": 
+          [
+            {
+              "axis": "patient",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C4",
+          "text": "I'll just get out of bed and stop overthinking this.",
+          "priority": 3,
+          "next-phrases": ["000-WAKING_UP_C7"],
+          "bumps":
+          [
+            {
+              "axis": "impulsive",
+              "strength": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_C4",
+      "text": "A terrifying scenario apart from the absurdity - your heart skips a beat - intrusive thoughts gain a worrying level of credibility when your mind doesn't have the context to orient itself.\n\nThen, a flash of something, perhaps to give you some comfort in this moment. A memory...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_C9"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C5",
+      "text": "Nothing to worry about, sure, but the aching remains to remind you something unusual has happened. It unfortunately makes it impossible to get any more rest, either.\n\nYour mind wanders as it imagines at the edge of sleep.\n\nThen, a memory...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_C9"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C6",
+      "text": "Your memories are hazy. The past day, nearly erased.\n\nThen you fix your focus on something in the haze - the beeping of the atmosphere indicator. A memory...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_C9"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C7",
+      "text": "It hurts, but you swivel your feet off the bed and stand up, legs wobbling. Your bones immediately tell you that this was a bad decision, too late.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_C8"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C8",
+      "text": "You're reeling - the aching is ten times worse. It's times like these where your brain must try something, anything, to distract itself.\n\nIn the nick of time comes a memory...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_C9"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C9",
+      "text": "A rough landing.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_C10"],
+      "image": "000_closed-eyes",
+      "ambience": "aircon"
+    },
+    {
+      "phrase": "000-WAKING_UP_C10",
+      "text": "Twelve hours ago, you were in your lander. The entry into the Martian atmosphere was going as your training had described until the final minute.\n\nIt felt like the lander had been falling too quickly, and it was. The navigation computer failed and hadn't told you to take manual control, but eventually your survival depended on it.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_C11"],
+      "image": "000_lander1",
+      "ambience": "lander"
+    },
+    {
+      "phrase": "000-WAKING_UP_C11",
+      "text": "Manually landing was in the training, but you last practiced that nearly a year ago, back on Earth.\n\nYou were forced to improvise.",
+      "speaker": "Narrator",
+      "priority": 0,
+            "choices":
+      [
+        {
+          "choice": "C1",
+          "text": "I pulled the lever. Didn't matter which lever, I just pulled the first one I saw.",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_C12"],
+          "bumps":
+          [
+            {
+              "axis": "impulsive",
+              "strength": "large"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "The terror stopped me from acting - I froze.",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_C13"],
+          "bumps":
+          [
+            {
+              "axis": "anxious",
+              "strength": "large"
+            }
+          ]
+        },
+        {
+          "choice": "C3",
+          "text": "I searched my mind and tried to remember my training. If I act too quickly, I might make things worse.",
+          "priority": 2,
+          "next-phrases": ["000-WAKING_UP_C14"],
+          "bumps":
+          [
+            {
+              "axis": "patient",
+              "strength": "large"
+            }
+          ]
+        },
+        {
+          "choice": "C4",
+          "text": "I resigned myself to my fate.",
+          "priority": 3,
+          "next-phrases": ["000-WAKING_UP_C15"],
+          "bumps":
+          [
+            {
+              "axis": "relaxed",
+              "strength": "large"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_C12",
+      "text": "That lever activated your RCS and sent you spinning.\n\nBetter than nothing, though; the extra thrust you could eke out from your random inputs compensated for the tumble. Out of the porthole window to your side you saw orange dunes shifting upward, then you saw quickly approaching ground...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "sfx": "landerthrust",
+      "next-phrases": ["000-WAKING_UP_D0"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C13",
+      "text": "You froze, but the lander did not. It kept falling faster and faster, the thrust of the engines not enough to make the landing safe - but you didn't spin out. Maybe keeping your hands off the controls saved your life. It certainly didn't save you from a sudden stop in motion...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D0"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C14",
+      "text": "And it works - you remember which lever controls the throttle, the meanings of all the gyroscopic controls spinning around you, and how exactly you needed to push the steering controls to bring it down gently.\n\nYou remembered, but just a moment later, you crashed...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "sfx": "landerthrust",
+      "next-phrases": ["000-WAKING_UP_D0"]
+    },
+    {
+      "phrase": "000-WAKING_UP_C15",
+      "text": "Whatever kept you calm in that moment didn't help you land, unfortunately. Perhaps you saw death and accepted it, or you felt assured your fate was to live. Either way, it might've helped to at least try *something*...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D0"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D0",
+      "text": "...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D1"],
+      "image": "000_closed-eyes",
+      "sfx": "landercrash",
+      "ambience": "aircon"
+    },
+    {
+      "phrase": "000-WAKING_UP_D1",
+      "text": "...Then, you were numb. Barely awake.\n\nThere was the vague awareness that you'd just hit the ground, everything else a blur.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D2"],
+      "image": "000_cracked"
+    },
+    {
+      "phrase": "000-WAKING_UP_D2",
+      "text": "\"Over here! Help me!\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D3"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D3",
+      "text": "A fitting choice of words, but it wasn't you who said them. It was a nasally voice, followed by a gruff response...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D4"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D4",
+      "text": "\"...pry open the door somehow...\"",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D5"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D5",
+      "text": "The wrenching of metal against metal. The strike of something like a hammer. Light fills your vision refracted through cracks in the visor.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D6"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D6",
+      "text": "Your rescuers exchange words that sound dull and indistinct under the ringing in your ears.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D7"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D7",
+      "text": "You think you're being carried by the shoulders, but this is where you begin to lose time and drift off.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D8"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D8",
+      "text": "Soon, the memory ends...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "image": "000_closed-eyes",
+      "ambience": "fuzz",
+      "next-phrases": ["000-WAKING_UP_D9"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D9",
+      "text": "And here you are: Mars.\n\nOther memories come back to you with less effort; before the landing, nearly a year spent in a cramped corridor, the gravity ring of your transport shuttle. The unchanging view of the stars. The taste of the 'chicken dinner' rations which never - not even in the later months as you grew desperate - came close to emulating the taste of chicken, or any actual food for that matter.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D10"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D10",
+      "text": "It was a long and solitary trip. You were on a connection back to Earth the entire way and therefore had no shortage of access to contacts for talking or media for consuming, but you were still thousands of kilometers away from the nearest person.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D11"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D11",
+      "text": "That time remains a blur of a short year. Nothing much happened of note - and if anything did, you weren't there for it.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_D12"]
+    },
+    {
+      "phrase": "000-WAKING_UP_D12",
+      "text": "Back to the bedroom, hurting a little less.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "image": "000_bed",
+      "next-phrases": ["000-WAKING_UP_E1"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E1",
+      "text": "Now it's clear that's where you are - a bedroom. You know it's meant to be yours as it's spotless, organized plainly and smelling of cleaning product. Had things gone right earlier you may have unpacked your personal items by now, but they're still in the bags you brought aboard your shuttle, waiting on the floor near the bed.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_E2"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E2",
+      "text": "Your head feels clearer and the pain isn't as bad. You don't know how long you were in that memory for.\n\nSomething has changed: barely audible voices mumbling through the door in front of you. They immediately remind you of the ones you heard after the crash.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_E3"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E3",
+      "text": "They've probably been waiting for you to wake up for a long time now.",
+      "speaker": "Narrator",
+      "priority": 0,
+            "choices":
+      [
+        {
+          "choice": "C1",
+          "text": "I'll go. I'm curious to meet them. I should thank them, too.",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_E4"],
+          "bumps":
+          [
+            {
+              "axis": "kind",
+              "strength": "medium"
+            },
+            {
+              "axis": "bold",
+              "strength": "small"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "I'll go and get this over with - enough wallowing.",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_E4"],
+          "bumps":
+          [
+            {
+              "axis": "impulsive",
+              "strength": "medium"
+            },
+            {
+              "axis": "bold",
+              "strength": "small"
+            }
+          ]
+        },
+        {
+          "choice": "C3",
+          "text": "I'll stay. I'm not excited to meet anyone new, and definitely not in this state...",
+          "priority": 2,
+          "next-phrases": ["000-WAKING_UP_E5"],
+          "bumps":
+          [
+            {
+              "axis": "shy",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C4",
+          "text": "I'll stay. I still haven't showered, you know?",
+          "priority": 3,
+          "next-phrases": ["000-WAKING_UP_E5"],
+          "bumps": [
+            {
+              "axis": "patient",
+              "strength": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_E4",
+      "text": "You roll to one side of the bed and test whether your legs will support you - only just. Shakily, you can stand and walk over to the door.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_E6"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E5",
+      "text": "Underlying the scent of cleaning product, there's something rank - it's you. A difficult trip and a stressful sleep have left you disheveled, unshowered, and a presence too pungent for good first impressions.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_E9"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E6",
+      "text": "\"...slept for so long?\"",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_E7"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E7",
+      "text": "The gruff voice again, clearer now.\n\nSeeing no reason to keep them waiting any further, you open the door.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_E71"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E71",
+      "text": "...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "image": "000_closed-eyes",
+      "sfx": "slidedoor",
+      "ambience": "aircon",
+      "next-phrases": ["000-WAKING_UP_E8"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E8",
+      "text": "The larger man steps back, yet his shoulders still take up most of the corridor. His expression is a still image, but his voice betrays some surprise: \"Woah. Spoke too soon.\"",
+      "speaker": "Cal",
+      "priority": 0,
+      "image": "000_calAndEarl",
+      "ambience": "musicmorning",
+      "next-phrases": ["000-WAKING_UP_F1"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E9",
+      "text": "However, as you're preparing to have a shower to either pass the time or freshen up, there is a knock on the door.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "choices":
+      [
+        {
+          "choice": "C1",
+          "text": "Maybe if I wait, they'll go away?",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_E10"],
+          "bumps":
+          [
+            {
+              "axis": "shy",
+              "strength": "large"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "Fine, I'll go to the door.",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_E12"]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_E10",
+      "text": "Not quite. Another knock - then, you're called out.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_E11"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E11",
+      "text": "\"Are you awake...?\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_E12"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E12",
+      "text": "Whether you wanted to or not, you walk over to answer the door.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_E13"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E13",
+      "text": "...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "image": "000_closed-eyes",
+      "sfx": "slidedoor",
+      "ambience": "aircon",
+      "next-phrases": ["000-WAKING_UP_E14"]
+    },
+    {
+      "phrase": "000-WAKING_UP_E14",
+      "text": "There, you meet the two men face-to-face. The larger one looks like he's been expecting you for hours, a minute amount of frustration pulling at the corners of his flat expression. \"Finally.\"",
+      "speaker": "Cal",
+      "priority": 0,
+      "image": "000_calAndEarl",
+      "ambience": "musicmorning",
+      "next-phrases": ["000-WAKING_UP_F1"]
+    },
+    {
+      "phrase": "000-WAKING_UP_F1",
+      "text": "The smaller one's bespectacled face clearly states his relief. \"We were worried you'd be bedridden. We're still trying to get something out of INFINITY about the cause of your accident, but...\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_F2"]
+    },
+    {
+      "phrase": "000-WAKING_UP_F2",
+      "text": "INFINITY - the corporation that sent you here.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "choices": 
+      [
+        {
+          "choice": "C1",
+          "text": "\"Accidents happen. I'm alive - that's what matters.\"",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_F5"],
+          "bumps": 
+          [
+            {
+              "axis": "relaxed",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "\"My memory's hazy, but it was probably my fault.\"",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_F3"],
+          "bumps": 
+          [
+            {
+              "axis": "anxious",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C3",
+          "text": "\"What a nightmare.\"",
+          "priority": 2,
+          "next-phrases": ["000-WAKING_UP_F4"]
+        },
+        {
+          "choice": "C4",
+          "text": "I nod silently. Now that I'm seeing them in person, I'm having trouble getting my words out.",
+          "priority": 3,
+          "next-phrases": ["000-WAKING_UP_G1"],
+          "bumps": 
+          [
+            {
+              "axis": "shy",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C5",
+          "text": "I nod silently. Not because I'm shy, but because I'm playing it *cool*.",
+          "priority": 4,
+          "next-phrases": ["000-WAKING_UP_G1"],
+          "bumps": 
+          [
+            {
+              "axis": "dishonest",
+              "strength": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_F3",
+      "text": "A sigh. \"Oh, don't say that - there was nothing you could do. These landers are meant to bring the pilot down without needing intervention, but clearly something went wrong.\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_F5"]
+    },
+    {
+      "phrase": "000-WAKING_UP_F4",
+      "text": "He nods, sympathizing. \"Indeed. If we can find the cause of this problem - maybe with your help - we could prevent something like it from happening again.\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_F5"]
+    },
+    {
+      "phrase": "000-WAKING_UP_F5",
+      "text": "His voice low and gravelly, the larger man's words overtake his colleague's without effort. \"INFINITY cut corners again and almost got you killed. Put us at risk, too. If you crashed any closer to our base, that'd be FIVE dead.\"\n\nHis hands are clenched. Behind his stone face he's seething, and probably has been since the accident.",
+      "speaker": "Cal",
+      "priority": 0,
+      "choices": 
+      [
+        {
+          "choice": "C1",
+          "text": "\"It's not worth holding a grudge over - I've already forgotten about it, honestly.\"",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_F6"],
+          "bumps": 
+          [
+            {
+              "axis": "relaxed",
+              "strength": "large"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "\"Yeah! I'm going to make those f#$&ers pay!\"",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_F7"],
+          "bumps": 
+          [
+            {
+              "axis": "mean",
+              "strength": "medium"
+            },
+            {
+              "axis": "impulsive",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C3",
+          "text": "\"What should we do about it?\"",
+          "priority": 2,
+          "next-phrases": ["000-WAKING_UP_F7"],
+          "bumps": 
+          [
+            {
+              "axis": "patient",
+              "strength": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_F6",
+      "text": "The gruff man sneers. \"What are you talking about? Did your survival instincts get knocked out of your head? Everyone knows we have to do something about this, but I guess nobody's willing to rock the boat.\"",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_F7"]
+    },
+    {
+      "phrase": "000-WAKING_UP_F7",
+      "text": "The man to your right interjects. \"I still don't think we should act yet... at least, not until we're clearer on the details. Even if it truly is the result of 'cut corners' as you say, we should approach it in a productive way.\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "choices": 
+      [
+        {
+          "choice": "C1",
+          "text": "\"If I had it my way, we'd be burning this station down.\"",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_F8"],
+          "bumps": 
+          [
+            {
+              "axis": "impulsive",
+              "strength": "large"
+            },
+            {
+              "axis": "mean",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "\"As the one who nearly didn't make it, I say we need to pressure them - get answers as soon as possible.\"",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_F9"],
+          "bumps": 
+          [
+            {
+              "axis": "impulsive",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C3",
+          "text": "\"Agreed. We have every right to be worried, but let's not act without thinking.\"",
+          "priority": 2,
+          "next-phrases": ["000-WAKING_UP_F10"],
+          "bumps": 
+          [
+            {
+              "axis": "patient",
+              "strength": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_F8",
+      "text": "The larger man eases up a little. \"...Not burning the station down with *all of us* in it, but I might feel the same in your position.\"",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_F11"]
+    },
+    {
+      "phrase": "000-WAKING_UP_F9",
+      "text": "\"That's what I've been saying this whole time.\" The larger one shoots a glance at the other man, and back at the door behind him - finally, some support.",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_F11"]
+    },
+    {
+      "phrase": "000-WAKING_UP_F10",
+      "text": "\"You're not doing yourself any favors by being a pushover. We should be making demands - doing *something*.\"",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_F11"]
+    },
+    {
+      "phrase": "000-WAKING_UP_F11",
+      "text": "\"Anyway!\" glasses man says, putting his hands up in an attempt to refocus the room. \"It's no use arguing about it right now. I'm sure it's the last thing you want to do after such a rough night.\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H1"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G1",
+      "text": "For a short time, they wait for a response. They share an uncertain glance, then the small one speaks.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_G2"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G2",
+      "text": "\"Are you feeling okay? Maybe you need a moment.\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_G3"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G3",
+      "text": "Other than the dull pain in your legs, you do. Entering a social situation has forced the fog in your brain to fully clear out.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "choices": 
+      [
+        {
+          "choice": "C1",
+          "text": "\"I'm not used to this. It's been a while.\"",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_G4"],
+          "bumps": 
+          [
+            {
+              "axis": "honest",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "I nod silently again. This is far harder than I imagined it being.",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_G6"],
+          "bumps": 
+          [
+            {
+              "axis": "shy",
+              "strength": "large"
+            }
+          ]
+        },
+        {
+          "choice": "C3",
+          "text": "\"I was trying to play it cool, sorry.\"",
+          "priority": 2,
+          "next-phrases": ["000-WAKING_UP_G7"],
+          "bumps": 
+          [
+            {
+              "axis": "honest",
+              "strength": "small"
+            }
+          ]
+        },
+        {
+          "choice": "C4",
+          "text": "\"Something's really wrong with my head. I could use a prescription - something strong.\" [Lie]",
+          "priority": 3,
+          "next-phrases": ["000-WAKING_UP_G9"],
+          "bumps": 
+          [
+            {
+              "axis": "dishonest",
+              "strength": "large"
+            },
+            {
+              "axis": "bold",
+              "strength": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_G4",
+      "text": "Like a natural, he gentles his voice. \"Right - you just came off the shuttle! I completely understand. I hope you'll be able to adjust, despite everything.\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_G5"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G5",
+      "text": "\"I'll do my best to accommodate. That's what I'm here for, after all... but, anyway.\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H1"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G6",
+      "text": "The 300 days you spent in isolation don't help either. You give the impression of a deer in the headlights.\n\nThe smaller man pieces it together, tapping the other on the arm - 'be nice', he means.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_G4"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G7",
+      "text": "You're certain they didn't see it as cool to begin with, but at least you tried to make a point.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_G8"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G8",
+      "text": "He tries to think of something sympathetic to say to it. \"Uh... no need. Your lander crashed, we're not expecting you to be at the 'top of your game'.\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_G5"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G9",
+      "text": "The man pushes up his glasses, takes up his clipboard and pencil immediately. \"Of course. Is it more of a dull constant ache? Sharp and occasional?\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "choices": 
+      [
+        {
+          "choice": "C1",
+          "text": "\"Sharp.\"",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_G10"]
+        },
+        {
+          "choice": "C2",
+          "text": "\"Dull.\"",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_G10"]
+        },
+        {
+          "choice": "C3",
+          "text": "\"I don't know, I just want hard drugs.\"",
+          "priority": 2,
+          "next-phrases": ["000-WAKING_UP_G12"],
+          "bumps": 
+          [
+            {
+              "axis": "bold",
+              "strength": "large"
+            },
+            {
+              "axis": "honest",
+              "strength": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_G10",
+      "text": "The man diligently writes it down. He asks you a few other questions to follow up, taking you through the medical triage like it's second nature to him. In all likelihood, you're going to get the drugs you \"need\" from him.",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_G11"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G11",
+      "text": "Meanwhile, the other man is staring at you. If your head really hurt, he wouldn't be.",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_G5"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G12",
+      "text": "That got a loud chuckle out of the man to your left.",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_G13"]
+    },
+    {
+      "phrase": "000-WAKING_UP_G13",
+      "text": "From the man to your right, uncertainty. He's trying and failing to figure out your intentions - was it a joke? He defaults to remaining helpful and attentive.\n\n\"Well, um... I can still try to diagnose you and get you the prescription you need. For now...\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_G5"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H1",
+      "text": "The man pushes up his glasses - he does it every ten seconds or so. \"Introductions. I'm Earl. I work medical here, and I'm a trained psychiatrist, so I'll be here to listen to any health and safety concerns you have. Day or night - please, knock on my door.\"\n\nEarl looks at the other man. \"Now...?\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H2"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H2",
+      "text": "I'm Cal.",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H3"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H3",
+      "text": "Earl keeps looking, and gestures for more. \"And, what do you do here, Cal?\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H4"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H4",
+      "text": "\"Maintenance.\"",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H5"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H5",
+      "text": "Earl is happy to clarify. \"We all do a bit of maintenance here, but our electrical engineer is Cal. A real expert, and highly qualified, I might add!\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H6"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H6",
+      "text": "There is a noticable pause after the un-asked-for compliment. You have a brief opportunity to interject with something important...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "choices": 
+      [
+        {
+          "choice": "C1",
+          "text": "\"I think you two are the ones that saved my life. Thank you, really. I owe you a lot.\"",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_H7"],
+          "bumps": 
+          [
+            {
+              "axis": "kind",
+              "strength": "large"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "\"Thanks for saving me back there.\"",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_H10"],
+          "bumps": 
+          [
+            {
+              "axis": "kind",
+              "strength": "small"
+            }
+          ]
+        },
+        {
+          "choice": "C3",
+          "text": "Let the moment pass.",
+          "priority": 2,
+          "next-phrases": ["000-WAKING_UP_H100"],
+          "bumps": 
+          [
+            {
+              "axis": "mean",
+              "strength": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phrase": "000-WAKING_UP_H7",
+      "text": "\"You don't owe me.\" A matter-of-fact statement.",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H8"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H8",
+      "text": "\"Perhaps you do? Cal managed to pry the lander open on his own - riveted metal plates, mind you - and when we got to you, your helmet had nearly been cracked open! Had we waited any longer...\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H9"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H9",
+      "text": "\"Yeah, I said you don't owe me.\" Saving your life was the least he could do.",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H100"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H10",
+      "text": "A nod. Cal hardly treats it as anything heroic.",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H11"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H11",
+      "text": "\"It's no problem - we're just glad you made it here. We've been a bit short on hands because...\" Earl interrupts himself, coughs, and allows a pause in the conversation again.",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H100"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H100",
+      "text": "\"Earl?\"",
+      "speaker": "Cal",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H101"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H101",
+      "text": "\"What? Oh!\" He notices the other man's impatience, checks the level of sunlight outside, and gestures back towards the end of the hall. \"Speaking of maintenance, Cal has business - but I'll help you get settled. Come with me.\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H102"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H102",
+      "text": "Cal moves ahead and quickly splits off to attend said business. You're taken into what they call the Hab.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H103"],
+      "image": "000_closed-eyes"
+    },
+    {
+      "phrase": "000-WAKING_UP_H103",
+      "text": "The Hab is a dome immense enough to be divided into sections. 'Immense' means 'quite small' in comparison to Earth's structures, but you've been in cramped, atmospherically controlled spaces for long enough now that the Hab feels like an open field.\n\nYou breathe in. The air is fresher, too.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H104"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H104",
+      "text": "Above, steel beams welded into triangles hold up a rounded ceiling of intimidating height.\n\nAt surface level, the space you're walking through appears to be a recreational area with couches, tables, scattered personal items, and even a wide-screen television.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H105"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H105",
+      "text": "The sections nearby are just as comprehensively livable: A spacious kitchen marked by the stains of regular use, a holographic desk surrounded by chairs and whiteboards, and something that looks like a hybrid laboratory and garden.\n\nYou catch a few scents - rosemary, sage, thyme. Half of the plants in the garden are herbs for cooking.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H106"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H106",
+      "text": "While Earl has been waiting for you to take everything in, Cal has made it across the Hab already, starting by trading his house slippers for tall socks, then gathering the parts of his EVA suit for an outing.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "next-phrases": ["000-WAKING_UP_H107"]
+    },
+    {
+      "phrase": "000-WAKING_UP_H107",
+      "text": "\"The RED HOLIDAY.\" Earl's expression is light with pride - this place means something to him, and now he gets to show it off. \"Best accommodation on Mars, I would say.\"",
+      "speaker": "Earl",
+      "priority": 0,
+      "choices": 
+      [
+        {
+          "choice": "C1",
+          "text": "\"You've really got something special here, huh?\"",
+          "priority": 0,
+          "next-phrases": ["000-WAKING_UP_FINALE1"],
+          "bumps": 
+          [
+            {
+              "axis": "kind",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C2",
+          "text": "\"Not what I'd call luxury, but it's livable.\"",
+          "priority": 1,
+          "next-phrases": ["000-WAKING_UP_FINALE1"],
+          "bumps": 
+          [
+            {
+              "axis": "mean",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C3",
+          "text": "\"When's dinner? I'm hungry all of a sudden.\"",
+          "priority": 2,
+          "next-phrases": ["000-WAKING_UP_FINALE1"],
+          "bumps": 
+          [
+            {
+              "axis": "impulsive",
+              "strength": "medium"
+            }
+          ]
+        },
+        {
+          "choice": "C4",
+          "text": "I'll say nothing - I have nothing interesting to add.",
+          "priority": 3,
+          "next-phrases": ["000-WAKING_UP_FINALE1"]
+        },
+        {
+          "choice": "C5",
+          "text": "I'll say nothing - it's cool and all, but making conversation is difficult.",
+          "priority": 4,
+          "next-phrases": ["000-WAKING_UP_FINALE1"],
+          "bumps": 
+          [
+            {
+              "axis": "shy",
+              "strength": "medium"
+            }
+          ]
+        }
+      ]
+    },
+
+
+
+    {
+      "phrase": "000-WAKING_UP_FINALE1",
+      "text": "This is the end of the prototype!\n\nThank you for playing, and I hope to develop this into a full demo in the future. But first...",
+      "speaker": "Narrator",
+      "priority": 0,
+      "image": "000_bedBlur1",
+      "next-phrases": ["000-WAKING_UP_FINALE2"]
+    },
+    {
+      "phrase": "000-WAKING_UP_FINALE2",
+      "text": "The choices you've made have affected your character's personality. Results will be shown on the next screen.",
+      "speaker": "Narrator",
+      "priority": 0,
+      "image": "000_bedBlur1",
+      "last": true
+    }
+  ]
+}

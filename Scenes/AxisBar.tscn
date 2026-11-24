@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://dciuuwmlb2d6f"]
+
+[ext_resource type="Script" uid="uid://cleo4ab1hj2o1" path="res://Scripts/Nodes/NAxisBar.cs" id="1_sbxjy"]
+
+[sub_resource type="Gradient" id="Gradient_m8qwt"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0atv0"]
+gradient = SubResource("Gradient_m8qwt")
+width = 500
+height = 25
+
+[sub_resource type="Gradient" id="Gradient_8etcy"]
+colors = PackedColorArray(0.98, 0.98, 0.98, 1, 0.98, 0.98, 0.98, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_f41b8"]
+gradient = SubResource("Gradient_8etcy")
+width = 500
+height = 25
+
+[sub_resource type="LabelSettings" id="LabelSettings_ycw30"]
+
+[node name="AxisBar" type="Control" unique_id=1519780599]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_sbxjy")
+
+[node name="LeftBar" type="TextureProgressBar" parent="." unique_id=394368375]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 319.0
+offset_right = 819.0
+offset_bottom = 25.0
+value = 50.0
+allow_lesser = true
+fill_mode = 1
+texture_under = SubResource("GradientTexture2D_0atv0")
+texture_progress = SubResource("GradientTexture2D_f41b8")
+tint_progress = Color(1, 0, 0, 1)
+
+[node name="LeftLabel" type="Label" parent="." unique_id=1785574278]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_right = 319.0
+offset_bottom = 24.0
+text = "PLACEHOLDER"
+label_settings = SubResource("LabelSettings_ycw30")
+horizontal_alignment = 1
+text_overrun_behavior = 1
+
+[node name="RightBar" type="TextureProgressBar" parent="." unique_id=35371558]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 819.0
+offset_right = 1319.0
+offset_bottom = 25.0
+value = 50.0
+allow_lesser = true
+texture_under = SubResource("GradientTexture2D_0atv0")
+texture_progress = SubResource("GradientTexture2D_f41b8")
+tint_progress = Color(0, 0.10000014, 1, 1)
+
+[node name="RightLabel" type="Label" parent="." unique_id=1428664477]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 1319.0
+offset_right = 1597.0
+offset_bottom = 24.0
+text = "PLACEHOLDER"
+label_settings = SubResource("LabelSettings_ycw30")
+horizontal_alignment = 1
+text_overrun_behavior = 1
+
+[node name="BarButton" type="Button" parent="." unique_id=513263845]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.003921569)
+layout_mode = 0
+offset_left = 319.0
+offset_right = 1319.0
+offset_bottom = 25.0
+button_mask = 3

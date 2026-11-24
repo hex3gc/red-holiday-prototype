@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://5tlkmhm5ny20"]
+
+[ext_resource type="Script" uid="uid://72rt85mhxy4t" path="res://Scripts/Nodes/NMain.cs" id="1_idj7w"]
+[ext_resource type="PackedScene" uid="uid://dciuuwmlb2d6f" path="res://Scenes/AxisBar.tscn" id="1_r150o"]
+[ext_resource type="Texture2D" uid="uid://cwwmc5fx4ehfv" path="res://Images/bg/000_closed-eyes.png" id="2_pbw6q"]
+[ext_resource type="Script" uid="uid://chrokfd8m8d2r" path="res://Scripts/Nodes/NTagDisplay.cs" id="3_kln2b"]
+[ext_resource type="PackedScene" uid="uid://djs2wvrf4yucl" path="res://Scenes/PhraseDisplay.tscn" id="4_rgh2o"]
+[ext_resource type="AudioStream" uid="uid://dmasr4k47vntl" path="res://Sounds/aircon.wav" id="6_v1gob"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_idj7w"]
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_48v2j"]
+font_size = 27
+
+[node name="Main" type="Node2D" unique_id=1626169607]
+script = ExtResource("1_idj7w")
+
+[node name="Bg" type="TextureRect" parent="." unique_id=1083602691]
+unique_name_in_owner = true
+offset_right = 1600.0
+offset_bottom = 900.0
+texture = ExtResource("2_pbw6q")
+
+[node name="KindMeanAxisBar" parent="." unique_id=1519780599 instance=ExtResource("1_r150o")]
+unique_name_in_owner = true
+visible = false
+offset_top = 256.0
+offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ShyBoldAxisBar" parent="." unique_id=240646899 instance=ExtResource("1_r150o")]
+unique_name_in_owner = true
+visible = false
+offset_top = 305.0
+offset_bottom = 305.0
+metadata/_edit_use_anchors_ = true
+
+[node name="PatientImpulsiveAxisBar" parent="." unique_id=1902892191 instance=ExtResource("1_r150o")]
+unique_name_in_owner = true
+visible = false
+offset_top = 357.0
+offset_bottom = 357.0
+metadata/_edit_use_anchors_ = true
+
+[node name="HonestDishonestAxisBar" parent="." unique_id=344903263 instance=ExtResource("1_r150o")]
+unique_name_in_owner = true
+visible = false
+offset_top = 408.0
+offset_bottom = 408.0
+metadata/_edit_use_anchors_ = true
+
+[node name="AnxiousRelaxedAxisBar" parent="." unique_id=912358375 instance=ExtResource("1_r150o")]
+unique_name_in_owner = true
+visible = false
+offset_top = 458.0
+offset_bottom = 458.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TagDisplay" type="Label" parent="." unique_id=1147881830]
+unique_name_in_owner = true
+visible = false
+texture_filter = 1
+offset_left = 933.0
+offset_right = 1600.0
+offset_bottom = 82.0
+text = "PLACEHOLDER"
+label_settings = SubResource("LabelSettings_idj7w")
+horizontal_alignment = 1
+text_overrun_behavior = 1
+script = ExtResource("3_kln2b")
+metadata/_edit_use_anchors_ = true
+
+[node name="PhraseDisplay" parent="." unique_id=1557349191 instance=ExtResource("4_rgh2o")]
+unique_name_in_owner = true
+offset_left = 200.0
+offset_top = 700.0
+offset_right = 1400.0
+offset_bottom = 900.0
+metadata/_edit_use_anchors_ = true
+
+[node name="AmbiencePlayer" type="AudioStreamPlayer" parent="." unique_id=1437230646]
+unique_name_in_owner = true
+stream = ExtResource("6_v1gob")
+volume_db = -5.0
+autoplay = true
+
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="." unique_id=840283152]
+unique_name_in_owner = true
+max_polyphony = 10
+
+[node name="DemoEndText" type="Label" parent="." unique_id=2093300698]
+unique_name_in_owner = true
+visible = false
+offset_left = 186.0
+offset_top = 534.0
+offset_right = 1417.0
+offset_bottom = 657.0
+text = "These are your personality axes!
+
+Keep this window open or take a screenshot for your questionnaire."
+label_settings = SubResource("LabelSettings_48v2j")
